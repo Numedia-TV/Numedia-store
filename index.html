@@ -6,175 +6,165 @@
   <title>Numedia Store</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #0b0b0b;
+      background: #0e0e0e;
       color: #fff;
       text-align: center;
     }
-
+    header {
+      background: #111;
+      padding: 0;
+    }
     header img {
       width: 100%;
-      max-height: 400px;
+      max-height: 300px;
       object-fit: cover;
-      border-bottom: 3px solid #e50914;
     }
-
     h1 {
-      color: #e50914;
-      margin-top: 20px;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin: 20px 0;
     }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
       padding: 20px;
     }
-
     .card {
-      background: #1c1c1c;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #1b1b1b;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      padding: 20px;
+      transition: transform 0.2s ease;
     }
-
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
     }
-
     .card img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      margin: 10px 0;
+      width: 100%;
+      border-radius: 10px;
     }
-
-    .card h3 {
+    .card h2 {
       margin: 10px 0 5px;
-      color: #fff;
+      font-size: 1.2rem;
+      color: #ff4747;
     }
-
-    .price {
-      font-size: 1.2em;
-      color: #e50914;
-      margin: 5px 0;
+    .card h3 {
+      margin: 0;
+      font-size: 1rem;
+      color: #ccc;
     }
-
+    .card p {
+      font-size: 0.95rem;
+      margin: 8px 0;
+    }
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 16px;
-      background: #e50914;
+      background: #ff4747;
       color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s ease;
+      transition: background 0.2s;
     }
-
     .btn:hover {
-      background: #b00610;
+      background: #ff2e2e;
     }
-
     footer {
-      margin-top: 40px;
+      margin-top: 30px;
       padding: 20px;
       background: #111;
       font-size: 0.9rem;
-      border-top: 1px solid #222;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header with Banner -->
   <header>
-    <img src="./banner.png" alt="Numedia Store Banner">
+    <img src="banner.png" alt="Numedia Store Banner">
   </header>
 
   <h1>Numedia Store</h1>
 
-  <!-- Product Grid -->
-  <div class="container">
+  <div class="products">
 
     <!-- Netflix -->
     <div class="card">
-      <img src="./netflix.png" alt="Netflix Logo">
-      <h3>NETFLIX</h3>
-      <p>1 Month</p>
-      <p class="price">5 USDT</p>
-      <a href="#" class="btn">Order</a>
+      <img src="netflix.png" alt="Netflix">
+      <h2>NETFLIX</h2>
+      <h3>1 Month</h3>
+      <p>5 USDT</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Order</a>
     </div>
 
     <div class="card">
-      <img src="./netflix.png" alt="Netflix Logo">
-      <h3>NETFLIX</h3>
-      <p>3 Months</p>
-      <p class="price">12 USDT</p>
-      <a href="#" class="btn">Order</a>
+      <img src="netflix.png" alt="Netflix">
+      <h2>NETFLIX</h2>
+      <h3>3 Months</h3>
+      <p>12 USDT</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Order</a>
     </div>
 
     <!-- Shahid -->
     <div class="card">
-      <img src="./shahid.png" alt="Shahid Logo">
-      <h3>SHAHID</h3>
-      <p>3 Months</p>
-      <p class="price">10 USDT</p>
-      <a href="#" class="btn">Order</a>
+      <img src="shahid.png" alt="Shahid">
+      <h2>SHAHID</h2>
+      <h3>3 Months</h3>
+      <p>10 USDT</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Order</a>
     </div>
 
     <!-- Prime Video -->
     <div class="card">
-      <img src="./prime.png" alt="Prime Video Logo">
-      <h3>PRIME VIDEO</h3>
-      <p>1 Month</p>
-      <p class="price">6 USDT</p>
-      <a href="#" class="btn">Order</a>
+      <img src="prime.png" alt="Prime Video">
+      <h2>PRIME VIDEO</h2>
+      <h3>1 Month</h3>
+      <p>6 USDT</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Order</a>
     </div>
 
     <!-- Lynx IPTV -->
     <div class="card">
-      <img src="./lynx.png" alt="Lynx IPTV Logo">
-      <h3>LYNX IPTV</h3>
-      <p>1 Month</p>
-      <p class="price">7 USDT</p>
-      <a href="#" class="btn">Order</a>
+      <img src="lynx.png" alt="Lynx IPTV">
+      <h2>LYNX IPTV</h2>
+      <h3>1 Month</h3>
+      <p>7 USDT</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Order</a>
     </div>
 
     <!-- Iron IPTV -->
     <div class="card">
-      <img src="./iron.png" alt="Iron IPTV Logo">
-      <h3>IRON IPTV</h3>
-      <p>1 Year</p>
-      <p class="price">40 USDT</p>
-      <a href="#" class="btn">Order</a>
+      <img src="iron.png" alt="Iron IPTV">
+      <h2>IRON IPTV</h2>
+      <h3>1 Year</h3>
+      <p>40 USDT</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Order</a>
     </div>
 
     <!-- Atlas IPTV -->
     <div class="card">
-      <img src="./atlas.png" alt="Atlas IPTV Logo">
-      <h3>ATLAS IPTV</h3>
-      <p>1 Month</p>
-      <p class="price">8 USDT</p>
-      <a href="#" class="btn">Order</a>
+      <img src="atlas.png" alt="Atlas IPTV">
+      <h2>ATLAS IPTV</h2>
+      <h3>1 Year</h3>
+      <p>25 USDT</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Order</a>
     </div>
 
     <!-- More -->
     <div class="card">
-      <h3>More</h3>
-      <p>See More Offers</p>
-      <a href="#" class="btn">→ Go to Channel</a>
+      <img src="more.png" alt="More">
+      <h2>More</h2>
+      <p>See More Offers →</p>
+      <a href="https://t.me/Numedia_stream" class="btn">Go to Channel</a>
     </div>
 
   </div>
 
-  <!-- Footer -->
   <footer>
     © 2025 Numedia Store — All Rights Reserved.
   </footer>
-
 </body>
 </html>
