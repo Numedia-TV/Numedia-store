@@ -1,167 +1,179 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Numedia Stream — Offres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Numedia Store</title>
   <style>
     body {
-      background: #000;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #0b0b0b;
       color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
     }
-    .header {
+
+    header {
+      background: linear-gradient(90deg, #000, #111, #000);
       text-align: center;
-      padding: 20px;
+      padding: 1rem 0;
+      border-bottom: 2px solid #e50914;
     }
-    .packs {
+
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin: 1rem 0;
+      color: #e50914;
+      font-size: 2rem;
+    }
+
+    .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
-    .pack {
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 16px;
+
+    .card {
+      background-color: #181818;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
       text-align: center;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .pack h2 {
-      margin: 0 0 12px;
-      color: #00aaff;
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
     }
-    .pack .duration {
-      margin: 8px 0;
-      font-size: 18px;
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      object-fit: cover;
     }
-    .pack .price {
-      font-size: 22px;
+
+    .card h2 {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .duration {
+      color: #ccc;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: #e50914;
       font-weight: bold;
-      margin: 12px 0;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
     }
-    .btn {
-      display: inline-block;
-      background: #00aaff;
-      color: #000;
-      padding: 10px 16px;
+
+    .order-btn {
+      background-color: #e50914;
+      color: white;
       border: none;
+      padding: 0.6rem 1.2rem;
       border-radius: 6px;
       cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
       text-decoration: none;
-      font-weight: bold;
+      display: inline-block;
+    }
+
+    .order-btn:hover {
+      background-color: #ff1b24;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
-  <div class="header">
-    <h1>Numedia Stream — Offres USDT</h1>
-  </div>
-  <div class="packs">
-    <!-- Netflix Pack -->
-    <div class="pack">
-      <h2>Netflix</h2>
-      <div class="duration">1 Mois</div>
-      <div class="price">15 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Netflix</h2>
-      <div class="duration">3 Mois</div>
-      <div class="price">40 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Netflix</h2>
-      <div class="duration">6 Mois</div>
-      <div class="price">70 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Netflix</h2>
-      <div class="duration">1 An</div>
-      <div class="price">120 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+  <header>
+    <!-- You will replace this banner image later -->
+    <img src="banner.jpg" alt="Numedia Store Banner" />
+    <h1>Numedia Store</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="netflix.png" alt="Netflix" />
+      <h2>NETFLIX</h2>
+      <div class="duration">1 Month</div>
+      <div class="price">5 USDT</div>
+      <a class="order-btn" href="https://t.me/YourTelegramChannel" target="_blank">Order</a>
     </div>
 
-    <!-- Lynx Pack -->
-    <div class="pack">
-      <h2>Lynx</h2>
-      <div class="duration">1 Mois</div>
-      <div class="price">10 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Lynx</h2>
-      <div class="duration">3 Mois</div>
-      <div class="price">25 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Lynx</h2>
-      <div class="duration">6 Mois</div>
-      <div class="price">45 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Lynx</h2>
-      <div class="duration">1 An</div>
-      <div class="price">80 USDT</div>
-      <a class="btn" href="https://t.e/YourChannel">Acheter</a>
-    </div>
-
-    <!-- Atlas Pack -->
-    <div class="pack">
-      <h2>Atlas</h2>
-      <div class="duration">1 Mois</div>
+    <div class="card">
+      <img src="netflix.png" alt="Netflix" />
+      <h2>NETFLIX</h2>
+      <div class="duration">3 Months</div>
       <div class="price">12 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Atlas</h2>
-      <div class="duration">3 Mois</div>
-      <div class="price">30 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Atlas</h2>
-      <div class="duration">6 Mois</div>
-      <div class="price">55 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
-    </div>
-    <div class="pack">
-      <h2>Atlas</h2>
-      <div class="duration">1 An</div>
-      <div class="price">90 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+      <a class="order-btn" href="https://t.me/YourTelegramChannel" target="_blank">Order</a>
     </div>
 
-    <!-- Iron Pack -->
-    <div classclass="pack">
-      <h2>Iron</h2>
-      <div class="duration">1 Mois</div>
-      <div class="price">11 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    <div class="card">
+      <img src="shahid.png" alt="Shahid" />
+      <h2>SHAHID</h2>
+      <div class="duration">3 Months</div>
+      <div class="price">10 USDT</div>
+      <a class="order-btn" href="https://t.me/YourTelegramChannel" target="_blank">Order</a>
     </div>
-    <div class="pack">
-      <h2>Iron</h2>
-      <div class="duration">3 Mois</div>
-      <div class="price">28 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+
+    <div class="card">
+      <img src="prime.png" alt="Prime Video" />
+      <h2>PRIME VIDEO</h2>
+      <div class="duration">1 Month</div>
+      <div class="price">6 USDT</div>
+      <a class="order-btn" href="https://t.me/YourTelegramChannel" target="_blank">Order</a>
     </div>
-    <div class="pack">
-      <h2>Iron</h2>
-      <div class="duration">6 Mois</div>
-      <div class="price">50 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+
+    <div class="card">
+      <img src="lynx.png" alt="Lynx IPTV" />
+      <h2>LYNX IPTV</h2>
+      <div class="duration">1 Month</div>
+      <div class="price">7 USDT</div>
+      <a class="order-btn" href="https://t.me/YourTelegramChannel" target="_blank">Order</a>
     </div>
-    <div class="pack">
-      <h2>Iron</h2>
-      <div class="duration">1 An</div>
-      <div class="price">85 USDT</div>
-      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+
+    <div class="card">
+      <img src="iron.png" alt="Iron IPTV" />
+      <h2>IRON IPTV</h2>
+      <div class="duration">1 Year</div>
+      <div class="price">40 USDT</div>
+      <a class="order-btn" href="https://t.me/YourTelegramChannel" target="_blank">Order</a>
+    </div>
+
+    <div class="card">
+      <img src="more.png" alt="More" />
+      <h2>More</h2>
+      <div class="duration">See More Offers</div>
+      <div class="price">→</div>
+      <a class="order-btn" href="https://t.me/YourTelegramChannel" target="_blank">Go to Channel</a>
     </div>
   </div>
+
+  <footer>
+    © 2025 Numedia Store — All Rights Reserved.
+  </footer>
 </body>
 </html>
