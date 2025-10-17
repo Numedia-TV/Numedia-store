@@ -3,171 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Numedia Stream Store</title>
+  <title>Numedia Store</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #000;
-      color: #fff;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background: #0b0b0b;
+      color: #fff;
       text-align: center;
-    }
-
-    header {
-      background-color: #000;
-      padding: 10px;
     }
 
     header img {
       width: 100%;
-      max-height: 250px;
+      max-height: 400px;
       object-fit: cover;
+      border-bottom: 3px solid #e50914;
     }
 
     h1 {
-      color: #00aaff;
+      color: #e50914;
+      margin-top: 20px;
       font-size: 2rem;
-      margin-top: 15px;
     }
 
-    .grid {
+    .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
-      max-width: 1200px;
-      margin: auto;
     }
 
     .card {
-      background-color: #111;
+      background: #1c1c1c;
       border-radius: 15px;
-      padding: 20px;
-      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
-      transform: scale(1.05);
-      background-color: #222;
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
     }
 
     .card img {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       object-fit: contain;
-      margin-bottom: 15px;
-    }
-
-    .price {
-      color: #00aaff;
-      font-weight: bold;
       margin: 10px 0;
     }
 
-    .btn {
-      background-color: #00aaff;
+    .card h3 {
+      margin: 10px 0 5px;
       color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #e50914;
+      margin: 5px 0;
+    }
+
+    .btn {
       display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #e50914;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #0077cc;
+      background: #b00610;
     }
 
     footer {
-      margin-top: 30px;
-      padding: 15px;
+      margin-top: 40px;
+      padding: 20px;
+      background: #111;
       font-size: 0.9rem;
-      color: #888;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
 <body>
- <header style="text-align: center; background-color: #000;">
-  <img src="banner.png" alt="Numedia Banner" style="width: 100%; max-height: 350px; object-fit: cover; border-bottom: 4px solid #ff0000;">
-</header>
 
-  <h1>Welcome to Numedia Stream</h1>
-  <p>Choose your favorite IPTV service and order in USDT</p>
+  <!-- Header with Banner -->
+  <header>
+    <img src="./banner.png" alt="Numedia Store Banner">
+  </header>
 
-  <div class="grid">
+  <h1>Numedia Store</h1>
+
+  <!-- Product Grid -->
+  <div class="container">
 
     <!-- Netflix -->
     <div class="card">
-      <img src="netflix.png" alt="Netflix Logo">
-      <h3>NETFLEX</h3>
-      <p>3 Months - <span class="price">17.80 USDT</span></p>
-      <p>1 Month - <span class="price">7.00 USDT</span></p>
-      <a href="https://t.me/YourTelegramChannel" class="btn">Order</a>
+      <img src="./netflix.png" alt="Netflix Logo">
+      <h3>NETFLIX</h3>
+      <p>1 Month</p>
+      <p class="price">5 USDT</p>
+      <a href="#" class="btn">Order</a>
+    </div>
+
+    <div class="card">
+      <img src="./netflix.png" alt="Netflix Logo">
+      <h3>NETFLIX</h3>
+      <p>3 Months</p>
+      <p class="price">12 USDT</p>
+      <a href="#" class="btn">Order</a>
     </div>
 
     <!-- Shahid -->
     <div class="card">
-      <img src="shahid.png" alt="Shahid Logo">
+      <img src="./shahid.png" alt="Shahid Logo">
       <h3>SHAHID</h3>
-      <p>3 Months - <span class="price">17.00 USDT</span></p>
-      <a href="https://t.me/YourTelegramChannel" class="btn">Order</a>
+      <p>3 Months</p>
+      <p class="price">10 USDT</p>
+      <a href="#" class="btn">Order</a>
     </div>
 
     <!-- Prime Video -->
     <div class="card">
-      <img src="prime.png" alt="Prime Video Logo">
+      <img src="./prime.png" alt="Prime Video Logo">
       <h3>PRIME VIDEO</h3>
-      <p>1 Year - <span class="price">5.00 USDT</span></p>
-      <a href="https://t.me/YourTelegramChannel" class="btn">Order</a>
+      <p>1 Month</p>
+      <p class="price">6 USDT</p>
+      <a href="#" class="btn">Order</a>
     </div>
 
     <!-- Lynx IPTV -->
     <div class="card">
-      <img src="lynx.png" alt="Lynx IPTV">
+      <img src="./lynx.png" alt="Lynx IPTV Logo">
       <h3>LYNX IPTV</h3>
-      <p>1 Year - <span class="price">13.80 USDT</span></p>
-      <p>6 Months - <span class="price">7.50 USDT</span></p>
-      <p>3 Months - <span class="price">3.90 USDT</span></p>
-      <p>1 Month - <span class="price">1.80 USDT</span></p>
-      <a href="https://t.me/YourTelegramChannel" class="btn">Order</a>
+      <p>1 Month</p>
+      <p class="price">7 USDT</p>
+      <a href="#" class="btn">Order</a>
     </div>
 
     <!-- Iron IPTV -->
     <div class="card">
-      <img src="iron.png" alt="Iron IPTV">
+      <img src="./iron.png" alt="Iron IPTV Logo">
       <h3>IRON IPTV</h3>
-      <p>1 Year - <span class="price">17.80 USDT</span></p>
-      <p>6 Months - <span class="price">12.80 USDT</span></p>
-      <p>Full 1 Year - <span class="price">26.50 USDT</span></p>
-      <a href="https://t.me/YourTelegramChannel" class="btn">Order</a>
+      <p>1 Year</p>
+      <p class="price">40 USDT</p>
+      <a href="#" class="btn">Order</a>
     </div>
 
     <!-- Atlas IPTV -->
     <div class="card">
-      <img src="atlas.png" alt="Atlas IPTV">
+      <img src="./atlas.png" alt="Atlas IPTV Logo">
       <h3>ATLAS IPTV</h3>
-      <p>1 Year - <span class="price">12.00 USDT</span></p>
-      <p>6 Months - <span class="price">5.80 USDT</span></p>
-      <p>3 Months - <span class="price">3.50 USDT</span></p>
-      <p>1 Month - <span class="price">2.50 USDT</span></p>
-      <a href="https://t.me/YourTelegramChannel" class="btn">Order</a>
+      <p>1 Month</p>
+      <p class="price">8 USDT</p>
+      <a href="#" class="btn">Order</a>
     </div>
 
     <!-- More -->
     <div class="card">
-      <img src="more.png" alt="More">
-      <h3>More Codes</h3>
-      <p>See all IPTV & Sharing options</p>
-      <a href="https://t.me/YourTelegramChannel" class="btn">Explore More</a>
+      <h3>More</h3>
+      <p>See More Offers</p>
+      <a href="#" class="btn">→ Go to Channel</a>
     </div>
 
   </div>
 
+  <!-- Footer -->
   <footer>
-    © 2025 Numedia Stream — All Rights Reserved
+    © 2025 Numedia Store — All Rights Reserved.
   </footer>
+
 </body>
 </html>
