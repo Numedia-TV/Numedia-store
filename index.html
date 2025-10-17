@@ -1,661 +1,167 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
-  <meta charset="utf-8" />
-
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <title>Numedia Stream - Catalogue</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Numedia Stream — Offres</title>
   <style>
-
-    body{font-family:Inter,system-ui,Arial;margin:20px;background:#0b0b0b;color:#eee}
-
-    header{display:flex;align-items:center;gap:16px}
-
-    .logo{width:56px;height:56px;background:#001f9a;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:#fff}
-
-    h1{margin:0;font-size:20px}
-
-    .controls{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
-
-    table{width:100%;border-collapse:collapse;margin-top:12px;background:#0f0f0f}
-
-    th,td{padding:8px;border:1px solid #222;text-align:left}
-
-    th{background:#111}
-
-    tr:nth-child(even){background:#0c0c0c}
-
-    input[type=number]{width:110px;padding:6px}
-
-    .btn{padding:8px 10px;border-radius:6px;border:0;cursor:pointer}
-
-    .btn-primary{background:#0066ff;color:#fff}
-
-    .btn-csv{background:#222;color:#fff}
-
-    .btn-telegram{background:#0088cc;color:#fff}
-
-    .small{font-size:12px;color:#999}
-
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+    }
+    .packs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .pack {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .pack h2 {
+      margin: 0 0 12px;
+      color: #00aaff;
+    }
+    .pack .duration {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+    .pack .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #00aaff;
+      color: #000;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
-
 </head>
-
 <body>
-
-  <header>
-
-    <div class="logo">N</div>
-
-    <div>
-
-      <h1>Numedia Stream — Catalogue produits</h1>
-
-      <div class="small">Prix affichés en <strong>USD</strong>. Cliquez sur un produit pour modifier le prix. Paiement → redirection Telegram.</div>
-
+  <div class="header">
+    <h1>Numedia Stream — Offres USDT</h1>
+  </div>
+  <div class="packs">
+    <!-- Netflix Pack -->
+    <div class="pack">
+      <h2>Netflix</h2>
+      <div class="duration">1 Mois</div>
+      <div class="price">15 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Netflix</h2>
+      <div class="duration">3 Mois</div>
+      <div class="price">40 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Netflix</h2>
+      <div class="duration">6 Mois</div>
+      <div class="price">70 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Netflix</h2>
+      <div class="duration">1 An</div>
+      <div class="price">120 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
     </div>
 
-  </header>
+    <!-- Lynx Pack -->
+    <div class="pack">
+      <h2>Lynx</h2>
+      <div class="duration">1 Mois</div>
+      <div class="price">10 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Lynx</h2>
+      <div class="duration">3 Mois</div>
+      <div class="price">25 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Lynx</h2>
+      <div class="duration">6 Mois</div>
+      <div class="price">45 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Lynx</h2>
+      <div class="duration">1 An</div>
+      <div class="price">80 USDT</div>
+      <a class="btn" href="https://t.e/YourChannel">Acheter</a>
+    </div>
 
+    <!-- Atlas Pack -->
+    <div class="pack">
+      <h2>Atlas</h2>
+      <div class="duration">1 Mois</div>
+      <div class="price">12 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Atlas</h2>
+      <div class="duration">3 Mois</div>
+      <div class="price">30 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Atlas</h2>
+      <div class="duration">6 Mois</div>
+      <div class="price">55 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Atlas</h2>
+      <div class="duration">1 An</div>
+      <div class="price">90 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
 
-
-  <div class="controls">
-
-    <label>Taux DZD→USD: <input id="rate" type="number" step="0.0001" value="0.0077" /></label>
-
-    <button id="convert" class="btn btn-primary">Convertir DZD → USD</button>
-
-    <button id="exportCsv" class="btn btn-csv">Exporter CSV</button>
-
-    <button id="reset" class="btn">Réinitialiser</button>
-
+    <!-- Iron Pack -->
+    <div classclass="pack">
+      <h2>Iron</h2>
+      <div class="duration">1 Mois</div>
+      <div class="price">11 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Iron</h2>
+      <div class="duration">3 Mois</div>
+      <div class="price">28 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Iron</h2>
+      <div class="duration">6 Mois</div>
+      <div class="price">50 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
+    <div class="pack">
+      <h2>Iron</h2>
+      <div class="duration">1 An</div>
+      <div class="price">85 USDT</div>
+      <a class="btn" href="https://t.me/YourChannel">Acheter</a>
+    </div>
   </div>
-
-
-
-  <table id="products">
-
-    <thead>
-
-      <tr>
-
-        <th>Code</th>
-
-        <th>Prix (DZD)</th>
-
-        <th>Prix (USD)</th>
-
-        <th>Modifier (USD)</th>
-
-        <th>Action</th>
-
-      </tr>
-
-    </thead>
-
-    <tbody></tbody>
-
-  </table>
-
-
-
-  <script>
-
-    // Replace or edit products here. Original prices are in DZD.
-
-    const products = [
-
-      {code:"SP1 Europe",dzd:4500},
-
-      {code:"Vanilla",dzd:675},
-
-      {code:"Phoenix",dzd:675},
-
-      {code:"Hi-Share",dzd:1195},
-
-      {code:"StarCam Pro",dzd:500},
-
-      {code:"Redshare",dzd:900},
-
-      {code:"NaShare",dzd:400},
-
-      {code:"NaShare V2 3 Months",dzd:1650},
-
-      {code:"NaShare V2 1 Months",dzd:700},
-
-      {code:"SupCam Algeria",dzd:2350},
-
-      {code:"SupCam Europe",dzd:2350},
-
-      {code:"Revcam",dzd:2350},
-
-      {code:"CCcam",dzd:480},
-
-      {code:"Memo TV",dzd:750},
-
-      {code:"G-IPTV",dzd:1040},
-
-      {code:"Funcam IPTV",dzd:1250},
-
-      {code:"Funcam IP&Ser",dzd:1470},
-
-      {code:"Forever IPTV",dzd:2875},
-
-      {code:"Forever IP&Ser",dzd:3335},
-
-      {code:"Avatar 1 Year",dzd:2650},
-
-      {code:"Avatar 6 Months",dzd:1100},
-
-      {code:"Avatar 3 Months",dzd:800},
-
-      {code:"Atlas Pro",dzd:1650},
-
-      {code:"Atlas Pro 6 Months",dzd:1150},
-
-      {code:"Atlas Pro 3 Months",dzd:780},
-
-      {code:"GoGo 1 Year",dzd:1650},
-
-      {code:"GoGo 6 Months",dzd:880},
-
-      {code:"GoGo 3 Months",dzd:550},
-
-      {code:"viper 1Y",dzd:1200},
-
-      {code:"viper 6M",dzd:600},
-
-      {code:"viper 3M",dzd:350},
-
-      {code:"viper 1M",dzd:120},
-
-      {code:"Luna 4K 1 Year",dzd:2600},
-
-      {code:"Luna 4K 6 Months",dzd:1350},
-
-      {code:"Luna 4K 3 Months",dzd:700},
-
-      {code:"Luna 4K 1 Month",dzd:250},
-
-      {code:"Fosto 2 Year",dzd:1800},
-
-      {code:"Fosto 1 Year",dzd:1280},
-
-      {code:"Fosto 6 Months",dzd:800},
-
-      {code:"Fosto 3 Months",dzd:580},
-
-      {code:"Shooters 15 Months",dzd:1700},
-
-      {code:"Shooters 1 Year",dzd:1650},
-
-      {code:"Shooters 6 Months",dzd:850},
-
-      {code:"Shooters 3 Months",dzd:500},
-
-      {code:"Shooters 1 Month",dzd:180},
-
-      {code:"Atlas Original",dzd:1000},
-
-      {code:"Atlas Plus 1 Year",dzd:1200},
-
-      {code:"Atlas Plus 6M",dzd:580},
-
-      {code:"Atlas Plus 3M",dzd:350},
-
-      {code:"Atlas Plus 1M",dzd:250},
-
-      {code:"POP IPTV",dzd:1100},
-
-      {code:"POP Vanilla",dzd:1380},
-
-      {code:"Neotv 1 Year",dzd:1450},
-
-      {code:"IRON 1 Year",dzd:1780},
-
-      {code:"IRON 6 Months",dzd:1280},
-
-      {code:"IRON Full 1 Year",dzd:2650},
-
-      {code:"OTT PLATINUM 1 Year",dzd:2300},
-
-      {code:"OTT PLATINUM 6 Months",dzd:1480},
-
-      {code:"ESPro 1 Year",dzd:1580},
-
-      {code:"ESPro 6 Months",dzd:1100},
-
-      {code:"ESPro 3 Months",dzd:800},
-
-      {code:"smart+ 1 Year",dzd:1550},
-
-      {code:"Orca Pro Plus 1 Year",dzd:2500},
-
-      {code:"Orca Pro Plus 6 Months",dzd:1680},
-
-      {code:"MYHD 2 Years",dzd:1550},
-
-      {code:"MYHD 1 Year",dzd:850},
-
-      {code:"MYHD 6 Months",dzd:450},
-
-      {code:"MYHD 3 Months",dzd:300},
-
-      {code:"MYHD 1 Month",dzd:190},
-
-      {code:"SUPTV 15 Months",dzd:800},
-
-      {code:"SUPTV 1 Year",dzd:700},
-
-      {code:"MoreTV",dzd:900},
-
-      {code:"Dream TV",dzd:1880},
-
-      {code:"SmartGo IPTV",dzd:2000},
-
-      {code:"Dragon IPTV",dzd:2380},
-
-      {code:"Matador 1 Year",dzd:1200},
-
-      {code:"Matador 6 Months",dzd:680},
-
-      {code:"Matador 3 Months",dzd:400},
-
-      {code:"Matador 1 Month",dzd:200},
-
-      {code:"HD200 1 Year",dzd:1150},
-
-      {code:"HD200 3 Months",dzd:500},
-
-      {code:"Eagle",dzd:1350},
-
-      {code:"Revenge UNIVERSEL 1 Year",dzd:1350},
-
-      {code:"LYNX 1 Year",dzd:1380},
-
-      {code:"LYNX 6 Months",dzd:750},
-
-      {code:"LYNX 3 Months",dzd:390},
-
-      {code:"LYNX 1 Month",dzd:180},
-
-      {code:"Cobra IPTV",dzd:1380},
-
-      {code:"Crystal 1 Year",dzd:1780},
-
-      {code:"Crystal 6 Months",dzd:800},
-
-      {code:"Crystal 3 Months",dzd:450},
-
-      {code:"Crystal 1 Month",dzd:150},
-
-      {code:"MagSat 1 Year",dzd:2700},
-
-      {code:"MagSat 6 Months",dzd:1650},
-
-      {code:"MagSat 3 Months",dzd:950},
-
-      {code:"IBO Player",dzd:390},
-
-      {code:"IBO a vie",dzd:740},
-
-      {code:"IBO Pro",dzd:480},
-
-      {code:"IBO Pro a vie",dzd:950},
-
-      {code:"Family 1 Year",dzd:1400},
-
-      {code:"Family 6 Months",dzd:700},
-
-      {code:"NEO4K 1 Year",dzd:2050},
-
-      {code:"NEO4K 6 Months",dzd:1020},
-
-      {code:"NEO4K 3 Months",dzd:550},
-
-      {code:"NEO4K 1 Month",dzd:250},
-
-      {code:"Aroma 1 Year",dzd:1750},
-
-      {code:"Aroma 6 Months",dzd:1280},
-
-      {code:"Aroma 3 Months",dzd:900},
-
-      {code:"Aroma 1 Month",dzd:480},
-
-      {code:"HOOK 1 Year",dzd:1000},
-
-      {code:"HOOK 6 Months",dzd:500},
-
-      {code:"HOOK 3 Months",dzd:250},
-
-      {code:"MMTV 1 Year",dzd:1200},
-
-      {code:"MMTV 6 Months",dzd:750},
-
-      {code:"MMTV 3 Months",dzd:550},
-
-      {code:"MMTV 1 Month",dzd:180},
-
-      {code:"Blue4k 1 Year",dzd:1400},
-
-      {code:"Blue4k 6 Months",dzd:850},
-
-      {code:"Blue4k 3 Months",dzd:700},
-
-      {code:"Blue4k 1 Month",dzd:380},
-
-      {code:"ido 1 Year",dzd:1200},
-
-      {code:"ido 6 Months",dzd:700},
-
-      {code:"ido 3 Months",dzd:400},
-
-      {code:"ido 1 Month",dzd:180},
-
-      {code:"Orca Demo 1Y",dzd:600},
-
-      {code:"Orca Demo 6M",dzd:300},
-
-      {code:"Orca Demo 3M",dzd:180},
-
-      {code:"Orca Demo 1M",dzd:120},
-
-      {code:"Max OTT 1 Year",dzd:1100},
-
-      {code:"Max OTT 6 Months",dzd:600},
-
-      {code:"Max OTT 3 Months",dzd:300},
-
-      {code:"Max OTT 1 Month",dzd:180},
-
-      {code:"Dar 1 Year",dzd:2050},
-
-      {code:"Dar 6 Months",dzd:1100},
-
-      {code:"Dar 3 Months",dzd:600},
-
-      {code:"Dar 1 Month",dzd:380},
-
-      {code:"Jupiter 1 Year",dzd:1300},
-
-      {code:"Jupiter 6 Months",dzd:800},
-
-      {code:"Jupiter 3 Months",dzd:650},
-
-      {code:"Jupiter 1 Month",dzd:350},
-
-      {code:"Ceme 1 Year",dzd:1100},
-
-      {code:"Ceme 6 Months",dzd:550},
-
-      {code:"Ceme 3 Months",dzd:350},
-
-      {code:"Rivolut player",dzd:400},
-
-      {code:"Prince 1 Year",dzd:1200},
-
-      {code:"Prince 6 Months",dzd:600},
-
-      {code:"Prince 3 Months",dzd:400},
-
-      {code:"IVHD 1 Year",dzd:1800},
-
-      {code:"IVHD 6 Months",dzd:1250},
-
-      {code:"IVHD 3 Months",dzd:900},
-
-      {code:"IVHD 1 Month",dzd:380},
-
-      {code:"TOP 4K 1 Year",dzd:1350},
-
-      {code:"TOP 4K 6 Months",dzd:900},
-
-      {code:"TOP 4K 3 Months",dzd:500},
-
-      {code:"TOP 4K 1 Month",dzd:180},
-
-      {code:"Mi Star IPTV 1 Year",dzd:550},
-
-      {code:"Mi Star IPTV 6 Months",dzd:350},
-
-      {code:"Mi Star IPTV 3 Months",dzd:250},
-
-      {code:"Mi Star IPTV 1 Month",dzd:120},
-
-      {code:"win+ 1 Year",dzd:1400},
-
-      {code:"win+ 6 Months",dzd:750},
-
-      {code:"win+ 3 Months",dzd:450},
-
-      {code:"win+ 1 Month",dzd:180},
-
-      {code:"Formula TV 1 Year",dzd:2100},
-
-      {code:"Formula TV 6 Months",dzd:1100},
-
-      {code:"Formula TV 3 Months",dzd:750},
-
-      {code:"Formula TV 1 Month",dzd:400},
-
-      {code:"Megastar 18 Months",dzd:1000},
-
-      {code:"Megastar 1 Year",dzd:700},
-
-      {code:"Megastar 6 Months",dzd:300},
-
-      {code:"Megastar 3 Months",dzd:250},
-
-      {code:"Megastar 1 Month",dzd:100},
-
-      {code:"NETFLEX 3 Months",dzd:1780},
-
-      {code:"NETFLEX 1 Month",dzd:700},
-
-      {code:"SHAHID 3 Months",dzd:1700},
-
-      {code:"Prime Video",dzd:500},
-
-      {code:"Test IPTV",dzd:15},
-
-      {code:"Premium 3 Months",dzd:9000},
-
-      {code:"Premium 6 Months",dzd:17600},
-
-      {code:"Premium 1 Year",dzd:34900},
-
-      {code:"ULTIMATE 3 Months",dzd:17000},
-
-      {code:"Mango VIP 1 Year",dzd:9400},
-
-      {code:"Mango VIP 6 Months",dzd:5550},
-
-      {code:"Mango VIP 3 Months",dzd:2900},
-
-      {code:"Mango Gshare 12M",dzd:2325},
-
-      {code:"Mango Gshare 3M",dzd:650},
-
-      {code:"Mango Gshare 1M",dzd:234},
-
-      {code:"Mango Funcam 12M",dzd:1400},
-
-      {code:"Mango Funcam 3M",dzd:650},
-
-      {code:"Mango Funcam 1M",dzd:238},
-
-      {code:"Mango Forever 12M",dzd:3050},
-
-      {code:"Mango Forever 3M",dzd:980},
-
-      {code:"Mango Forever 1M",dzd:350},
-
-      {code:"Mango Gshare IPTV 12M",dzd:1680},
-
-      {code:"Mango Funcam IPTV 12M",dzd:1680},
-
-      {code:"Mango Forever IPTV 12M",dzd:3320},
-
-      {code:"Mango Gshare IP&Ser 12M",dzd:2800},
-
-      {code:"Mango Funcam IP&Ser 12M",dzd:2285},
-
-      {code:"Mango Forever IP&Ser 12M",dzd:4550},
-
-      {code:"Mango SP1 Europe 12M",dzd:5400},
-
-      {code:"Mango SP2 Europe 12M",dzd:5800}
-
-    ];
-
-
-
-    const tbody = document.querySelector('#products tbody');
-
-
-
-    function formatUSD(v){
-
-      return '$' + Number(v).toFixed(2);
-
-    }
-
-
-
-    function render(rate){
-
-      tbody.innerHTML = '';
-
-      products.forEach((p, idx)=>{
-
-        const usd = (p.dzd * rate);
-
-        const tr = document.createElement('tr');
-
-        tr.innerHTML = `
-
-          <td>${p.code}</td>
-
-          <td data-dzd>${p.dzd}</td>
-
-          <td data-usd>${formatUSD(usd)}</td>
-
-          <td><input type="number" step="0.01" value="${usd.toFixed(2)}" data-idx="${idx}" /></td>
-
-          <td><button class="btn btn-telegram" data-idx="${idx}">Payer via Telegram</button></td>
-
-        `;
-
-        tbody.appendChild(tr);
-
-      });
-
-
-
-      // attach listeners
-
-      tbody.querySelectorAll('input[type=number]').forEach(inp=>{
-
-        inp.addEventListener('change', (e)=>{
-
-          const i = +e.target.dataset.idx; products[i].customUsd = Number(e.target.value);
-
-        });
-
-      });
-
-
-
-      tbody.querySelectorAll('.btn-telegram').forEach(b=>{
-
-        b.addEventListener('click', ()=>{
-
-          const i = +b.dataset.idx;
-
-          const p = products[i];
-
-          const price = p.customUsd ? p.customUsd : (p.dzd * Number(document.getElementById('rate').value));
-
-          // Open Telegram channel (edit link below to your actual channel)
-
-          const tg = 'https://t.me/YourChannel';
-
-          // We add product info in message param (user can see product name in channel or pinned message)
-
-          window.open(tg, '_blank');
-
-        });
-
-      });
-
-    }
-
-
-
-    document.getElementById('convert').addEventListener('click', ()=>{
-
-      const rate = Number(document.getElementById('rate').value) || 0.0077;
-
-      render(rate);
-
-      localStorage.setItem('numedia_rate', rate);
-
-    });
-
-
-
-    document.getElementById('exportCsv').addEventListener('click', ()=>{
-
-      const rate = Number(document.getElementById('rate').value) || 0.0077;
-
-      let csv = 'Code,Price_DZD,Price_USD\n';
-
-      products.forEach(p=>{
-
-        const usd = p.customUsd ? p.customUsd : (p.dzd * rate);
-
-        csv += `"${p.code}",${p.dzd},${usd.toFixed(2)}\n`;
-
-      });
-
-      const blob = new Blob([csv],{type:'text/csv'});
-
-      const url = URL.createObjectURL(blob);
-
-      const a = document.createElement('a'); a.href=url; a.download='numedia_products.csv'; a.click(); URL.revokeObjectURL(url);
-
-    });
-
-
-
-    document.getElementById('reset').addEventListener('click', ()=>{
-
-      localStorage.removeItem('numedia_rate');
-
-      document.getElementById('rate').value='0.0077';
-
-      render(0.0077);
-
-    });
-
-
-
-    // init
-
-    const savedRate = localStorage.getItem('numedia_rate');
-
-    if(savedRate) document.getElementById('rate').value = savedRate;
-
-    render(Number(document.getElementById('rate').value));
-
-  </script>
-
 </body>
-
 </html>
