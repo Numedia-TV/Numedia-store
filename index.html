@@ -1,171 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Numedia Store</title>
+  <title>Boutique Demo</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
       margin: 0;
-      background: #0e0e0e;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      background: #111;
       padding: 0;
     }
-    header img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 1.5em;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin: 20px 0;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-    .card {
-      background: #1b1b1b;
-      border-radius: 12px;
-      width: 250px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      padding: 20px;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      width: 100%;
+    .product {
+      background: white;
       border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s;
     }
-    .card h2 {
-      margin: 10px 0 5px;
-      font-size: 1.2rem;
-      color: #ff4747;
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
-    .card h3 {
-      margin: 0;
-      font-size: 1rem;
-      color: #ccc;
+    .product h3 {
+      color: #333;
     }
-    .card p {
-      font-size: 0.95rem;
-      margin: 8px 0;
+    .product p {
+      font-size: 1.2em;
+      color: #555;
     }
     .btn {
-      display: inline-block;
-      background: #25D366;
-      color: #fff;
-      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 15px;
+      border: none;
       border-radius: 8px;
+      cursor: pointer;
       text-decoration: none;
-      transition: background 0.2s;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+      margin-top: 10px;
     }
     .btn:hover {
-      background: #1ebe5d;
-    }
-    footer {
-      margin-top: 30px;
-      padding: 20px;
-      background: #111;
-      font-size: 0.9rem;
-      color: #aaa;
+      background-color: #1DA851;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="banner.gif" alt="Numedia Store Banner">
-  </header>
 
-  <h1>Numedia Store</h1>
+  <header>Boutique Demo</header>
 
-  <div class="products">
-
-    <!-- Netflix 1 Month -->
-    <div class="card">
-      <img src="netflix.png" alt="Netflix">
-      <h2>NETFLIX</h2>
-      <h3>1 Month</h3>
-      <p>5 USDT</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Netflix 1 Month (5 USDT)" target="_blank" class="btn">Commander</a>
+  <div class="container">
+    <div class="product">
+      <h3>SP1 Europe</h3>
+      <p>Prix : 4500 DA</p>
+      <a href="https://wa.me/213542718108?text=Bonjour%2C%20je%20souhaite%20commander%20le%20produit%20SP1%20Europe%20(4500DA)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
 
-    <!-- Netflix 3 Months -->
-    <div class="card">
-      <img src="netflix.png" alt="Netflix">
-      <h2>NETFLIX</h2>
-      <h3>3 Months</h3>
-      <p>12 USDT</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Netflix 3 Months (12 USDT)" target="_blank" class="btn">Commander</a>
+    <div class="product">
+      <h3>Vanilla</h3>
+      <p>Prix : 675 DA</p>
+      <a href="https://wa.me/213542718108?text=Bonjour%2C%20je%20souhaite%20commander%20le%20produit%20Vanilla%20(675DA)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
 
-    <!-- Shahid -->
-    <div class="card">
-      <img src="shahid.png" alt="Shahid">
-      <h2>SHAHID</h2>
-      <h3>3 Months</h3>
-      <p>10 USDT</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Shahid 3 Months (10 USDT)" target="_blank" class="btn">Commander</a>
+    <div class="product">
+      <h3>Phoenix</h3>
+      <p>Prix : 675 DA</p>
+      <a href="https://wa.me/213542718108?text=Bonjour%2C%20je%20souhaite%20commander%20le%20produit%20Phoenix%20(675DA)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
 
-    <!-- Prime Video -->
-    <div class="card">
-      <img src="prime.png" alt="Prime Video">
-      <h2>PRIME VIDEO</h2>
-      <h3>1 Month</h3>
-      <p>6 USDT</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Prime Video 1 Month (6 USDT)" target="_blank" class="btn">Commander</a>
+    <div class="product">
+      <h3>Hi-Share</h3>
+      <p>Prix : 1195 DA</p>
+      <a href="https://wa.me/213542718108?text=Bonjour%2C%20je%20souhaite%20commander%20le%20produit%20Hi-Share%20(1195DA)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
 
-    <!-- Lynx IPTV -->
-    <div class="card">
-      <img src="lynx.png" alt="Lynx IPTV">
-      <h2>LYNX IPTV</h2>
-      <h3>1 Month</h3>
-      <p>7 USDT</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Lynx IPTV 1 Month (7 USDT)" target="_blank" class="btn">Commander</a>
+    <div class="product">
+      <h3>StarCam Pro</h3>
+      <p>Prix : 500 DA</p>
+      <a href="https://wa.me/213542718108?text=Bonjour%2C%20je%20souhaite%20commander%20le%20produit%20StarCam%20Pro%20(500DA)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
 
-    <!-- Iron IPTV -->
-    <div class="card">
-      <img src="iron.png" alt="Iron IPTV">
-      <h2>IRON IPTV</h2>
-      <h3>1 Year</h3>
-      <p>40 USDT</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Iron IPTV 1 Year (40 USDT)" target="_blank" class="btn">Commander</a>
+    <div class="product">
+      <h3>Redshare</h3>
+      <p>Prix : 900 DA</p>
+      <a href="https://wa.me/213542718108?text=Bonjour%2C%20je%20souhaite%20commander%20le%20produit%20Redshare%20(900DA)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
-
-    <!-- Atlas IPTV -->
-    <div class="card">
-      <img src="atlas.png" alt="Atlas IPTV">
-      <h2>ATLAS IPTV</h2>
-      <h3>1 Year</h3>
-      <p>25 USDT</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Atlas IPTV 1 Year (25 USDT)" target="_blank" class="btn">Commander</a>
-    </div>
-
-    <!-- More -->
-    <div class="card">
-      <img src="more.png" alt="More">
-      <h2>More</h2>
-      <p>See More Offers →</p>
-      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux voir les autres offres Numedia Store" target="_blank" class="btn">Contacter sur WhatsApp</a>
-    </div>
-
   </div>
 
-  <footer>
-    © 2025 Numedia Store — All Rights Reserved.
-  </footer>
 </body>
 </html>
