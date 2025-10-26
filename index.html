@@ -6,100 +6,166 @@
   <title>Numedia Store</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: white;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
+      background: #0e0e0e;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background: #111;
       padding: 0;
     }
-
-    header {
-      background-color: #1f1f1f;
-      text-align: center;
-      padding: 20px;
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
     }
-
     h1 {
-      margin: 0;
-      color: #00ff9d;
+      font-size: 2.5rem;
+      margin: 20px 0;
     }
-
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
       padding: 20px;
     }
-
-    .product {
-      background-color: #1e1e1e;
+    .card {
+      background: #1b1b1b;
       border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
       padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.2s ease;
     }
-
-    .product:hover {
+    .card:hover {
       transform: translateY(-5px);
     }
-
-    .product img {
-      width: 100px;
-      height: auto;
+    .card img {
+      width: 100%;
+      border-radius: 10px;
     }
-
-    .order-btn {
-      background-color: #00ff9d;
-      color: black;
-      border: none;
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: #ff4747;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin: 8px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
       padding: 10px 20px;
       border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: 10px;
+      text-decoration: none;
+      transition: background 0.2s;
     }
-
-    .order-btn:hover {
-      background-color: #00cc7a;
+    .btn:hover {
+      background: #1ebe5d;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Numedia Store</h1>
-    <p>Contactez-nous sur WhatsApp pour passer commande 📱</p>
+    <img src="banner.gif" alt="Numedia Store Banner">
   </header>
 
-  <section class="products">
-    <div class="product">
+  <h1>Numedia Store</h1>
+
+  <div class="products">
+
+    <!-- Netflix 1 Month -->
+    <div class="card">
       <img src="netflix.png" alt="Netflix">
-      <h3>Netflix Premium</h3>
-      <p>Prix : 1400 DA</p>
-      <button class="order-btn" onclick="order('Netflix Premium')">Commander</button>
+      <h2>NETFLIX</h2>
+      <h3>1 Month</h3>
+      <p>5 USDT</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Netflix 1 Month (5 USDT)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
 
-    <div class="product">
-      <img src="shahid.png" alt="Shahid VIP">
-      <h3>Shahid VIP</h3>
-      <p>Prix : 1600 DA</p>
-      <button class="order-btn" onclick="order('Shahid VIP')">Commander</button>
+    <!-- Netflix 3 Months -->
+    <div class="card">
+      <img src="netflix.png" alt="Netflix">
+      <h2>NETFLIX</h2>
+      <h3>3 Months</h3>
+      <p>12 USDT</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Netflix 3 Months (12 USDT)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
 
-    <div class="product">
-      <img src="iptv.png" alt="IPTV">
-      <h3>IPTV 12 Mois</h3>
-      <p>Prix : 2500 DA</p>
-      <button class="order-btn" onclick="order('IPTV 12 Mois')">Commander</button>
+    <!-- Shahid -->
+    <div class="card">
+      <img src="shahid.png" alt="Shahid">
+      <h2>SHAHID</h2>
+      <h3>3 Months</h3>
+      <p>10 USDT</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Shahid 3 Months (10 USDT)" target="_blank" class="btn">Commander via WhatsApp</a>
     </div>
-  </section>
 
-  <script>
-    function order(productName) {
-      const phone = "213542718108"; // Numéro WhatsApp sans le "+"
-      const message = encodeURIComponent(`Bonjour 👋, je veux commander : ${productName}`);
-      const url = `https://wa.me/${phone}?text=${message}`;
-      window.location.href = url; // redirige directement (plus fiable que window.open)
-    }
-  </script>
+    <!-- Prime Video -->
+    <div class="card">
+      <img src="prime.png" alt="Prime Video">
+      <h2>PRIME VIDEO</h2>
+      <h3>1 Month</h3>
+      <p>6 USDT</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Prime Video 1 Month (6 USDT)" target="_blank" class="btn">Commander via WhatsApp</a>
+    </div>
+
+    <!-- Lynx IPTV -->
+    <div class="card">
+      <img src="lynx.png" alt="Lynx IPTV">
+      <h2>LYNX IPTV</h2>
+      <h3>1 Month</h3>
+      <p>7 USDT</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Lynx IPTV 1 Month (7 USDT)" target="_blank" class="btn">Commander via WhatsApp</a>
+    </div>
+
+    <!-- Iron IPTV -->
+    <div class="card">
+      <img src="iron.png" alt="Iron IPTV">
+      <h2>IRON IPTV</h2>
+      <h3>1 Year</h3>
+      <p>40 USDT</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Iron IPTV 1 Year (40 USDT)" target="_blank" class="btn">Commander via WhatsApp</a>
+    </div>
+
+    <!-- Atlas IPTV -->
+    <div class="card">
+      <img src="atlas.png" alt="Atlas IPTV">
+      <h2>ATLAS IPTV</h2>
+      <h3>1 Year</h3>
+      <p>25 USDT</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux commander : Atlas IPTV 1 Year (25 USDT)" target="_blank" class="btn">Commander via WhatsApp</a>
+    </div>
+
+    <!-- More -->
+    <div class="card">
+      <img src="more.png" alt="More">
+      <h2>More</h2>
+      <p>See More Offers →</p>
+      <a href="https://wa.me/213542718108?text=Bonjour 👋, je veux voir les autres offres Numedia Store" target="_blank" class="btn">Contacter sur WhatsApp</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Numedia Store — All Rights Reserved.
+  </footer>
 </body>
 </html>
