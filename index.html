@@ -95,10 +95,10 @@
 
   <script>
     function order(productName) {
-      const message = `Bonjour 👋, je veux commander : ${productName}`;
-      const phone = "+213542718108";
-      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-      window.open(url, "_blank");
+      const phone = "213542718108"; // Numéro WhatsApp sans le "+"
+      const message = encodeURIComponent(`Bonjour 👋, je veux commander : ${productName}`);
+      const url = `https://wa.me/${phone}?text=${message}`;
+      window.location.href = url; // redirige directement (plus fiable que window.open)
     }
   </script>
 </body>
